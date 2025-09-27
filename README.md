@@ -154,10 +154,6 @@ Synthesize using Yosys
 ---
 
 📂 Lab Setup
-
-1. Clone the repository:
-
-
 #### <ins>**clone**</ins>
 ```bash
 
