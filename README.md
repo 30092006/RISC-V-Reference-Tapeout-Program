@@ -103,7 +103,7 @@ Objective: Establish foundational knowledge of Verilog and RTL design.
 Tasks:
 
 1. Install Verilog simulation tools (Icarus Verilog, GTKWave).
-![Alt Text](.png)
+
 
 2. Write a simple combinational circuit (2-to-1 multiplexer).
 
