@@ -159,8 +159,6 @@ Synthesize using Yosys
 $git clone https://github.com/yourrepo/RTL_workshop.git
 cd RTL_workshop/Day_1
 
-#### <ins>**run simulation**</ins>
-```bash
 
 
 
