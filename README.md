@@ -147,18 +147,12 @@ Simulate and verify functionality
 
 Synthesize using Yosys
 
-
-
-
-
----
-
 📂 Lab Setup
 
 #### <ins>**clone**</ins>
 ```bash
 $git clone https://github.com/yourrepo/RTL_workshop.git
-cd RTL_workshop/Day_1
+cd RTL_workshop/Day_1```
 
 
 
