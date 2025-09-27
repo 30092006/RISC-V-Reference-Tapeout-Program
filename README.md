@@ -162,15 +162,6 @@ cd RTL_workshop/Day_1
 #### <ins>**run simulation**</ins>
 ```bash
 
-2. Run simulation:
-$iverilog -o adder_tb.vvp adder_tb.v adder.v
-vvp adder_tb.vvp
-gtkwave adder_tb.vcd
 
-#### <ins>**perform synthesis**</ins>
-```bash
-3. Perform synthesis:
-
-$yosys -p "synth -top adder; write_verilog adder_synth.v" adder.v
 
 
