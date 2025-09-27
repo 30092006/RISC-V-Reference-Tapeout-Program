@@ -93,66 +93,151 @@ Text editor or IDE (VS Code recommended)
 
 
 
+RTL Design Workshop: 5-Day Guide
+
+Day 1: Introduction & Basic Verilog
+
+Objective: Establish foundational knowledge of Verilog and RTL design.
+
+Tasks:
+
+1. Install Verilog simulation tools (Icarus Verilog, GTKWave).
+
+
+2. Write a simple combinational circuit (2-to-1 multiplexer).
+
+
+3. Create a testbench to verify functionality.
+
+
+4. Simulate and observe waveforms.
+
+
+5. Document challenges and observations.
+
+
+
+Deliverable: A working multiplexer Verilog module with a verified testbench.
+
+
 ---
 
-📖 Topics Covered
+Day 2: Sequential Logic & Counters
 
-1. Introduction to RTL Design
+Objective: Learn sequential design and basic timing concepts.
 
-What is RTL?
+Tasks:
 
-Difference between RTL and Gate-level design
-
-Importance of synthesizable code
+1. Design a 4-bit synchronous counter with enable and reset signals.
 
 
+2. Implement a testbench with multiple scenarios:
 
-2. Verilog Basics
+Normal counting
 
-Modules and ports
+Reset functionality
 
-Data types: wire, reg
-
-Operators and expressions
-
-Procedural blocks: always, initial
+Enable/disable behavior
 
 
 
-3. Simulation
+3. Simulate using waveform analyzer; verify all scenarios.
 
-Writing testbenches
 
-Compiling and running simulations with Icarus Verilog
-
-Viewing waveforms with GTKWave
+4. Add comments and timing diagrams for documentation.
 
 
 
-4. Synthesis
-
-Understanding synthesis flow
-
-Using Yosys to synthesize simple modules
-
-Reading synthesis reports
+Deliverable: Counter module with fully functional testbench and timing report.
 
 
+---
 
-5. Practical Lab
+Day 3: RTL Optimization & Modular Design
 
-Design a 4-bit adder in Verilog
+Objective: Practice writing reusable and optimized RTL modules.
 
-Simulate and verify functionality
+Tasks:
 
-Synthesize using Yosys
+1. Refactor the counter into a parameterized module (e.g., n-bit counter).
 
-📂 Lab Setup
 
-#### <ins>**clone**</ins>
-```bash
-$git clone https://github.com/yourrepo/RTL_workshop.git
-cd RTL_workshop/Day_1```
+2. Combine multiple small modules into a top-level design (e.g., counter + decoder).
+
+
+3. Optimize for minimal logic usage while keeping functionality.
+
+
+4. Run simulations to ensure correctness after modular integration.
+
+
+5. Record synthesis metrics like LUTs, flip-flops, and critical path delays.
+
+
+
+Deliverable: Modular, parameterized RTL design with optimized logic utilization.
+
+
+---
+
+Day 4: RTL Synthesis & Timing Analysis
+
+Objective: Translate RTL into gate-level design and analyze timing.
+
+Tasks:
+
+1. Set up synthesis flow using an open-source tool (Yosys or Vivado).
+
+
+2. Synthesize the top-level design from Day 3.
+
+
+3. Analyze synthesis report:
+
+Number of gates
+
+Maximum frequency
+
+Propagation delay
+
+
+
+4. Apply constraints (clock period, input/output delays) to meet timing.
+
+
+5. Generate a gate-level netlist and compare simulation with RTL behavior.
+
+
+
+Deliverable: Synthesis report, gate-level netlist, and verified timing analysis.
+
+
+---
+
+Day 5: Advanced Verification & Reporting
+
+Objective: Verify overall design correctness and prepare professional documentation.
+
+Tasks:
+
+1. Develop an advanced testbench using assertions and random stimulus.
+
+
+2. Check corner cases and boundary conditions.
+
+
+3. Generate functional coverage reports to ensure all cases are tested.
+
+
+4. Document the full workflow: RTL → Simulation → Synthesis → Verification.
+
+
+5. Prepare a GitHub-ready repository with organized files, README, and diagrams.
+
+
+
+Deliverable: Fully verified RTL project with structured GitHub repository and complete documentation.
+
 
 
 
