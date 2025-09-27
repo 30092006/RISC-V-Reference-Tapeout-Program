@@ -160,13 +160,7 @@ Synthesize using Yosys
 $git clone https://github.com/yourrepo/RTL_workshop.git
 cd RTL_workshop/Day_1
 
-![Alt Text](Images/Yosys.png)
-#### <ins>**run**</ins>
-```bash
-2. Run simulation:
-$iverilog -o adder_tb.vvp adder_tb.v adder.v
-vvp adder_tb.vvp
-gtkwave adder_tb.vcd
+
 
 
 
