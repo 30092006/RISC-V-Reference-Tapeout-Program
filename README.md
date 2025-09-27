@@ -51,7 +51,129 @@ $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
 ![Alt Text](Images/Gtkwave.png)
-Clone the Workshop Repository
-gitclonehttps://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
-cd sky130RTLDesignAndSynthesisWorkshop/verilog_files
+Day 1: Introduction to Verilog RTL Design & Synthesis
+
+Welcome to Day 1 of the RTL Workshop! Today marks the beginning of your journey into digital design, Verilog coding, and hardware description languages. By the end of this session, you'll be able to write simple RTL modules, simulate them, and perform basic synthesis.
+
+
+---
+
+📚 Objectives
+
+By the end of this session, participants will be able to:
+
+1. Understand the basics of Digital Logic Design.
+
+
+2. Learn Verilog HDL syntax and coding standards.
+
+
+3. Perform simulation using Icarus Verilog (iverilog).
+
+
+4. Conduct RTL synthesis with Yosys.
+
+
+5. Analyze timing diagrams and module behavior.
+
+
+
+
+---
+
+🛠 Tools Required
+
+Icarus Verilog (iverilog) – Open-source Verilog simulator
+
+Yosys – Open-source logic synthesis tool
+
+GTKWave – Waveform viewer for simulation results
+
+Text editor or IDE (VS Code recommended)
+
+
+
+---
+
+📖 Topics Covered
+
+1. Introduction to RTL Design
+
+What is RTL?
+
+Difference between RTL and Gate-level design
+
+Importance of synthesizable code
+
+
+
+2. Verilog Basics
+
+Modules and ports
+
+Data types: wire, reg
+
+Operators and expressions
+
+Procedural blocks: always, initial
+
+
+
+3. Simulation
+
+Writing testbenches
+
+Compiling and running simulations with Icarus Verilog
+
+Viewing waveforms with GTKWave
+
+
+
+4. Synthesis
+
+Understanding synthesis flow
+
+Using Yosys to synthesize simple modules
+
+Reading synthesis reports
+
+
+
+5. Practical Lab
+
+Design a 4-bit adder in Verilog
+
+Simulate and verify functionality
+
+Synthesize using Yosys
+
+
+
+
+
+---
+
+📂 Lab Setup
+
+1. Clone the repository:
+
+
+
+git clone https://github.com/yourrepo/RTL_workshop.git
+cd RTL_workshop/Day_1
+
+2. Run simulation:
+
+
+
+iverilog -o adder_tb.vvp adder_tb.v adder.v
+vvp adder_tb.vvp
+gtkwave adder_tb.vcd
+
+3. Perform synthesis:
+
+
+
+yosys -p "synth -top adder; write_verilog adder_synth.v" adder.v
+
 
