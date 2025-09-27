@@ -159,14 +159,14 @@ Synthesize using Yosys
 
 
 
-git clone https://github.com/yourrepo/RTL_workshop.git
+$git clone https://github.com/yourrepo/RTL_workshop.git
 cd RTL_workshop/Day_1
 
 2. Run simulation:
 
 
 
-iverilog -o adder_tb.vvp adder_tb.v adder.v
+$iverilog -o adder_tb.vvp adder_tb.v adder.v
 vvp adder_tb.vvp
 gtkwave adder_tb.vcd
 
@@ -174,6 +174,6 @@ gtkwave adder_tb.vcd
 
 
 
-yosys -p "synth -top adder; write_verilog adder_synth.v" adder.v
+$yosys -p "synth -top adder; write_verilog adder_synth.v" adder.v
 
 
