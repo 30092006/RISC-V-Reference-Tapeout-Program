@@ -158,11 +158,15 @@ Synthesize using Yosys
 1. Clone the repository:
 
 
+#### <ins>**clone**</ins>
+```bash
 
 $git clone https://github.com/yourrepo/RTL_workshop.git
 cd RTL_workshop/Day_1
 
 2. Run simulation:
+#### <ins>**run simulation**</ins>
+```bash
 
 
 
@@ -171,7 +175,8 @@ vvp adder_tb.vvp
 gtkwave adder_tb.vcd
 
 3. Perform synthesis:
-
+#### <ins>**perform synthesis**</ins>
+```bash
 
 
 $yosys -p "synth -top adder; write_verilog adder_synth.v" adder.v
