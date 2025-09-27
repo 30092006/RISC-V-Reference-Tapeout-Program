@@ -51,3 +51,7 @@ $ sudo apt-get update
 $ sudo apt install gtkwave
 ```
 ![Alt Text](Images/Gtkwave.png)
+Clone the Workshop Repository
+gitclonehttps://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+cd sky130RTLDesignAndSynthesisWorkshop/verilog_files
+
