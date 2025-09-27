@@ -157,19 +157,7 @@ cd RTL_workshop/Day_1```
 
 
 
-Day 2: Branching and Merging
 
-Objective: Learn to work with branches and merge changes.
-
-Tasks:
-
-Create a new branch for a specific task (e.g., feature/adder).
-
-Implement a simple adder in Verilog (e.g., day_2/adder.v).
-
-Stage, commit, and push your changes.
-
-Create a pull request (PR) from your branch to main.
 
 
 
