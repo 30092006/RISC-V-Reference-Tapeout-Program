@@ -53,12 +53,9 @@ $ sudo apt install gtkwave
 ![Alt Text](Images/Gtkwave.png)
 Day 1: Introduction to Verilog RTL Design & Synthesis
 
-Welcome to Day 1 of the RTL Workshop! Today marks the beginning of your journey into digital design, Verilog coding, and hardware description languages. By the end of this session, you'll be able to write simple RTL modules, simulate them, and perform basic synthesis.
+WEEK 2 Task
 
-
----
-
-📚 Objectives
+Objectives
 
 By the end of this session, participants will be able to:
 
@@ -77,11 +74,7 @@ By the end of this session, participants will be able to:
 5. Analyze timing diagrams and module behavior.
 
 
-
-
----
-
-🛠 Tools Required
+ Tools Required
 
 Icarus Verilog (iverilog) – Open-source Verilog simulator
 
@@ -121,8 +114,6 @@ Tasks:
 Deliverable: A working multiplexer Verilog module with a verified testbench.
 
 
----
-
 Day 2: Sequential Logic & Counters
 
 Objective: Learn sequential design and basic timing concepts.
@@ -152,8 +143,6 @@ Enable/disable behavior
 Deliverable: Counter module with fully functional testbench and timing report.
 
 
----
-
 Day 3: RTL Optimization & Modular Design
 
 Objective: Practice writing reusable and optimized RTL modules.
@@ -178,8 +167,6 @@ Tasks:
 
 Deliverable: Modular, parameterized RTL design with optimized logic utilization.
 
-
----
 
 Day 4: RTL Synthesis & Timing Analysis
 
@@ -212,9 +199,6 @@ Propagation delay
 
 Deliverable: Synthesis report, gate-level netlist, and verified timing analysis.
 
-
----
-
 Day 5: Advanced Verification & Reporting
 
 Objective: Verify overall design correctness and prepare professional documentation.
@@ -238,6 +222,132 @@ Tasks:
 
 
 Deliverable: Fully verified RTL project with structured GitHub repository and complete documentation.
+Fundamentals of SoC Design
+
+
+
+Objective
+
+The goal of this module is to understand how complex digital systems are designed, verified, and implemented on silicon. You’ll gain a practical understanding of SoC components, design hierarchy, integration, and sign-off stages.
+
+
+
+What is an SoC?
+
+A System-on-Chip (SoC) is a complete electronic system integrated into a single silicon chip.
+It typically combines:
+
+Processor cores (e.g., RISC-V, ARM)
+
+Memory components (SRAM, DRAM, Flash)
+
+Peripherals (UART, SPI, I2C, GPIO)
+
+Custom accelerators or IP blocks
+
+Interconnect fabric for communication
+
+
+SoC design merges hardware, software, and embedded systems into a single cohesive unit optimized for power, performance, and area (PPA).
+
+
+Key Stages of SoC Design
+
+1. Specification & Architecture Definition
+
+Define system goals, use cases, and constraints.
+
+Create a block-level architecture and data flow model.
+
+
+
+2. RTL Design & Integration
+
+Develop and integrate IP cores using hardware description languages (Verilog/VHDL).
+
+Ensure modularity and clean interfaces between IPs.
+
+
+
+3. Functional Verification
+
+Verify the RTL design using simulation (testbenches, assertions, UVM).
+
+Ensure design meets functional and timing specifications.
+
+
+
+4. Synthesis
+
+Convert RTL code into a gate-level netlist using EDA tools.
+
+Optimize for PPA metrics.
+
+
+
+5. Floorplanning & Place-and-Route (PnR)
+
+Plan physical layout of IP blocks.
+
+Perform placement, routing, and congestion analysis.
+
+
+
+6. Static Timing Analysis (STA) & Sign-off
+
+Verify timing closure.
+
+Perform DRC, LVS, and power verification.
+
+
+
+7. Tape-out & Fabrication
+
+Final step where the verified GDSII file is sent for chip manufacturing.
+
+
+ Design Abstraction Levels
+
+Level	Description	Example
+
+System Level	Algorithm or behavioral description	C/C++, SystemC
+RTL Level	Register-transfer level logic	Verilog, VHDL
+Gate Level	Logic gates and flip-flops	Synthesized Netlist
+Physical Level	Transistor layout	GDSII
+
+
+ SoC Integration Flow
+
+[Specification]
+      ↓
+[Architecture Design]
+      ↓
+[RTL Design]
+      ↓
+[Verification]
+      ↓
+[Synthesis]
+      ↓
+[Physical Design]
+      ↓
+[Sign-off & Tape-out]
+
+Each stage feeds into the next — forming a complete VLSI design cycle for SoC realization.
+
+Learning Outcomes
+
+By the end of this module, you will:
+
+Understand SoC architecture and IP integration.
+
+Learn the complete RTL-to-GDSII design flow.
+
+Gain clarity on verification, synthesis, and PnR processes.
+
+Comprehend how different abstraction levels map to silicon.
+
+
+
 
 
 
