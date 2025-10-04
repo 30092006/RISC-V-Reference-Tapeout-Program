@@ -53,7 +53,7 @@ $ sudo apt install gtkwave
 ![Alt Text](Images/Gtkwave.png)
 Day 1: Introduction to Verilog RTL Design & Synthesis
 
-WEEK 2 Task
+WEEK 1 Task
 
 Objectives
 
@@ -225,7 +225,7 @@ Deliverable: Fully verified RTL project with structured GitHub repository and co
 Fundamentals of SoC Design
 
 
-
+WEEK 2 Task:
 Objective
 
 The goal of this module is to understand how complex digital systems are designed, verified, and implemented on silicon. You’ll gain a practical understanding of SoC components, design hierarchy, integration, and sign-off stages.
